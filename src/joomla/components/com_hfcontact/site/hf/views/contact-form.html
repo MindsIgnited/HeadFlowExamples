@@ -1,0 +1,18 @@
+<form id="hf-contact-form" action="{{ action.postURL }}" method="post" enctype="multipart/form-data">
+    <input class="txtbox required clearfield" type="text" name="name" value="NAME"  />
+    <br />
+    <input class="txtbox required email clearfield" type="text" name="email" value="EMAIL"  />
+    <br />
+    <input class="txtbox clearfield" type="text" name="phone" value="PHONE" maxlength="15"  />
+    <br />
+    <input class="txtbox clearfield" type="text" name="subject" value="SUBJECT"  />
+    <br />
+    <textarea name="message" cols="40" rows="10" class="editbox clearfield" rel="MESSAGE" ></textarea>
+    <br />
+    <img src="{{action.captchaURL}}" alt="Captcha" width="200px" height="70px"/>
+    <br />
+    <input class="txtbox clearfield required captcha" type="text" name="captcha" value="ENTER CODE"  />
+    <br />
+    <input type="reset" value="Reset" class="btn" /> <input type="submit" value="Send" class="btn" />
+</form>
+<div id="hf-contact-response" style="display:none"></div>

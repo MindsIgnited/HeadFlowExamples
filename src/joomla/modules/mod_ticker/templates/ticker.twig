@@ -1,0 +1,17 @@
+
+
+<div id="{{tickerId}}" class="flip-counter"></div>
+
+{% autoescape false %}
+<script type="text/javascript" > 
+    var HeadflowCounter = null;
+    window.addEvent('domready', function() {
+        // for some reason this is executed more than once on the home page 
+        // so we guard against that. This also has the affect of only allowing 1 ticker per page.
+        if(HeadflowCounter == null){
+            HeadflowCounter = new flipCounter("{{tickerId}}", {value:{{startValue}}, inc: 1, auto:false,pace:500 } );
+            HeadflowCounter.incrementTo({{endValue}}); 
+        }
+    });
+</script>
+{% endautoescape %}

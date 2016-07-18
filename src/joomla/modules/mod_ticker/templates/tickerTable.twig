@@ -1,0 +1,13 @@
+    <div class="tickerList">
+    	<table class="tickerListTable">
+            <tbody>
+            {% for cus in customers %} 
+            <tr>
+                <td class="tickerCustomerName">{{cus.name}}</td>
+                <td class="tickerCustomerCode">{{cus.code}}</td>
+                <td class="tickerCustomerTotal">{{cus.count}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>   

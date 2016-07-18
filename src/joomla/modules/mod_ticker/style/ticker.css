@@ -1,0 +1,22 @@
+
+.tickerListTable {
+    margin: 0 auto;
+    width: 668px;
+    background: url("../img/tablerow.png") 0 2px scroll repeat-y;
+    font-size: 20px;
+    font-family: Helvetiva, Arial, sans-serif;
+    padding: 0px 5px 0px 5px;
+    line-height: 37px;
+}
+
+.tickerCustomerName{
+    width:242px;
+}
+
+.tickerCustomerCode, .tickerCustomerTotal{
+    width:200px;
+}
+
+.tickerCustomerTotal{
+    text-align: right;
+}

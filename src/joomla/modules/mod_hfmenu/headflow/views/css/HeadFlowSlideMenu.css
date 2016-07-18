@@ -1,0 +1,129 @@
+.hfMenu {
+    width: 720px;
+    height:140px;
+    position: relative;
+    background: url("../images/bar_bg.png") 0 0 scroll repeat-x;
+    border-top: 1px solid black;
+}
+
+.hfMenu .hfMenuWrapper {
+    width: 632px; /* .hfMenu width - (.hfMenuWrapper margin-left + .hfMenuWrapper margin-right) */
+    height:140px;
+    overflow: auto;
+    margin: 0 44px; /* Size of end caps */
+    position: absolute;
+    top: 0;
+}
+
+.hfMenu .hfMenuWrapper ul {
+    width: 9999px;
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 0;
+    
+    /* Sizing specific */
+    height:97px;
+}
+
+.hfMenu ul li {
+    display:block;
+    float:left;
+   
+    /* Sizing specific */
+    width: 156px;
+    height: 96px;
+    
+    /* Style specific */
+    background: url("../images/item_bg.png") repeat-x;
+    border-top: #3f3f3c solid 1px;
+    border-left: #3f3f3c solid 1px;
+    margin-left: 1px;
+}
+
+.hfMenu ul li.hfactive {
+    background: #20201f;
+}
+
+/** Active menu item styling **/
+
+.hfMenu ul li a {
+    display: block;
+    position: relative;
+    height: 58px;
+    background: url("../images/item_bg.png") repeat-x;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 11px;
+    padding: 17px 19px 21px 19px;
+}
+.hfMenu ul li a span {
+    color: #a51f1a;
+    font-size: 14px;
+    line-height: 30px;
+}
+.hfMenu ul li a:hover {
+    color: #fff;
+}
+.hfMenu ul li a:hover span {
+    color: #cc1d17;
+}
+
+.hfMenu ul li.hfactive a{
+    color: #fff;
+    top:20px;
+    z-index: 2;
+}
+
+.hfMenu ul li.hfactive span {
+    color: #cc1d17;
+}
+
+/** Arrows and menu caps ***/
+.hfMenuCap {
+    height: 96px;
+    width:44px;
+    position: absolute;
+    top: 0;
+    border-top: #3f3f3c solid 1px;
+    background: url("../images/item_bg.png") repeat-x;
+}
+
+.hfMenuCapBack{
+    left: 0;
+}
+
+.hfMenuCapForward{
+    right: 0;
+    width:43px;
+    border-left: black solid 1px;
+}
+
+.hfMenu .hfArrow {
+    display: block;
+    height: 96px;
+    width: 44px;
+    cursor: pointer;
+}
+
+.hfMenu .hfArrowForward {
+    background: url("../images/arrow_right.png");
+    width:43px;
+}
+
+.hfMenu a.hfArrowForward:hover {
+    background: url("../images/arrow_right_over.png");
+}
+
+.hfMenu .hfArrowBack { 
+    background: url("../images/arrow_left.png");
+}
+
+.hfMenu a.hfArrowBack:hover {
+    background: url("../images/arrow_left_over.png");
+}
+

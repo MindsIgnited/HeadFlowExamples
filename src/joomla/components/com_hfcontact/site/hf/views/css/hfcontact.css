@@ -1,0 +1,16 @@
+
+.error{
+    border: 2px solid red !important;
+    color: red !important;
+}
+
+.error-display{
+    height: 24px;
+    margin: 5px 0;
+    color: red;
+}
+
+label.error {
+    border: none !important;
+    display: block;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>HFToolTip</name>
+	<author>HeadFlow, LLC</author>
+	<creationDate>December 30, 2010</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2005 - 2010 HeadFlow, LLC. All rights reserved.</copyright>
+	<license></license>
+	<version>0.1</version>
+	<description>Module to display tooltip.</description>
+	
+	<files>
+		<filename module="mod_hftooltip">mod_hftooltip.php</filename>
+		<filename>HFToolTip.php</filename>
+		<filename>index.html</filename>
+		<filename>images/leftBottom.png</filename>
+		<filename>images/leftTop.png</filename>
+		<filename>images/rightBottom.png</filename>
+		<filename>images/rightTop.png</filename>
+		<filename>javascript/hftooltip.js</filename>
+		<filename>javascript/jquery-1.4.4.min.js</filename>
+		<filename>javascript/jquery.jscrollpane.min.js</filename>
+		<filename>javascript/jquery.mousewheel.js</filename>
+		<filename>javascript/jquery.qtip-1.0.0-rc3.min.js</filename>
+		<filename>style/hftooltip.css</filename>
+		<filename>style/jquery.jscrollpane.css</filename>
+	</files>
+	
+	<params>
+		<param name="icon" type="imagelist" label="Icon" directory="images/tooltipicons" description="Image icon to use" />
+		<param name="title" type="textarea" label="Title" description="Tooltip title" rows="2" cols="50"/>
+		<param name="content" type="textarea" label="Content" description="Tooltip content" rows="10" cols="50"/>
+		<param name="tooltiptargetpos" type="list" default="0" label="Select a Tooltip position" description="The postion that the tooltip will be displayed in.">
+		  <option value="leftTop">Left Top</option>
+		  <option value="leftBottom">Left Bottom</option>
+		  <option value="rightTop">Right Top</option>
+		  <option value="rightBottom">Right Bottom</option>
+		</param>
+		<param name="targetselector" type="text" label="Target" description="jQuery selector for showing tooltip." />
+		<param name="hidedelay" type="text" label="Hide Delay" description="Hide delay (in milliseconds)"/>
+	</params>
+</install>

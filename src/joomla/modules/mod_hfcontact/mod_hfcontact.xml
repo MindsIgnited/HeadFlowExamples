@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>HFContact</name>
+	<author>HeadFlow, LLC</author>
+	<creationDate>December 30, 2010</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2005 - 2010 HeadFlow, LLC. All rights reserved.</copyright>
+	<license></license>
+	<version>0.1</version>
+	<description>Module to display Contact Form.</description>
+	
+	<files>
+		<filename module="mod_hfcontact">mod_hfcontact.php</filename>
+	</files>
+	
+	<params>
+	</params>
+</install>

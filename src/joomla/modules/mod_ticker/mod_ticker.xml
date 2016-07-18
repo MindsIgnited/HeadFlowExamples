@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Ticker</name>
+	<author>Organi Studios</author>
+	<creationDate>December 30, 2010</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<license></license>
+	<version>0.1</version>
+	<description>Module to display Ticker.</description>
+	
+	<files>
+		<filename module="mod_ticker">mod_ticker.php</filename>
+<filename>Ticker.php</filename>
+<filename>TickerDAO.php</filename>
+<filename>Twig/Autoloader.php</filename>
+<filename>Twig/Compiler.php</filename>
+<filename>Twig/CompilerInterface.php</filename>
+<filename>Twig/Environment.php</filename>
+<filename>Twig/Error.php</filename>
+<filename>Twig/Error/Loader.php</filename>
+<filename>Twig/Error/Runtime.php</filename>
+<filename>Twig/Error/Syntax.php</filename>
+<filename>Twig/ExpressionParser.php</filename>
+<filename>Twig/Extension.php</filename>
+<filename>Twig/Extension/Core.php</filename>
+<filename>Twig/Extension/Escaper.php</filename>
+<filename>Twig/Extension/Optimizer.php</filename>
+<filename>Twig/Extension/Sandbox.php</filename>
+<filename>Twig/ExtensionInterface.php</filename>
+<filename>Twig/Filter.php</filename>
+<filename>Twig/Filter/Function.php</filename>
+<filename>Twig/Filter/Method.php</filename>
+<filename>Twig/FilterInterface.php</filename>
+<filename>Twig/Function.php</filename>
+<filename>Twig/Function/Function.php</filename>
+<filename>Twig/Function/Method.php</filename>
+<filename>Twig/FunctionInterface.php</filename>
+<filename>Twig/Lexer.php</filename>
+<filename>Twig/LexerInterface.php</filename>
+<filename>Twig/Loader/Array.php</filename>
+<filename>Twig/Loader/Filesystem.php</filename>
+<filename>Twig/Loader/String.php</filename>
+<filename>Twig/LoaderInterface.php</filename>
+<filename>Twig/Markup.php</filename>
+<filename>Twig/Node.php</filename>
+<filename>Twig/Node/AutoEscape.php</filename>
+<filename>Twig/Node/Block.php</filename>
+<filename>Twig/Node/BlockReference.php</filename>
+<filename>Twig/Node/Expression.php</filename>
+<filename>Twig/Node/Expression/Array.php</filename>
+<filename>Twig/Node/Expression/AssignName.php</filename>
+<filename>Twig/Node/Expression/Binary.php</filename>
+<filename>Twig/Node/Expression/Binary/Add.php</filename>
+<filename>Twig/Node/Expression/Binary/And.php</filename>
+<filename>Twig/Node/Expression/Binary/Concat.php</filename>
+<filename>Twig/Node/Expression/Binary/Div.php</filename>
+<filename>Twig/Node/Expression/Binary/Equal.php</filename>
+<filename>Twig/Node/Expression/Binary/FloorDiv.php</filename>
+<filename>Twig/Node/Expression/Binary/Greater.php</filename>
+<filename>Twig/Node/Expression/Binary/GreaterEqual.php</filename>
+<filename>Twig/Node/Expression/Binary/In.php</filename>
+<filename>Twig/Node/Expression/Binary/Less.php</filename>
+<filename>Twig/Node/Expression/Binary/LessEqual.php</filename>
+<filename>Twig/Node/Expression/Binary/Mod.php</filename>
+<filename>Twig/Node/Expression/Binary/Mul.php</filename>
+<filename>Twig/Node/Expression/Binary/NotEqual.php</filename>
+<filename>Twig/Node/Expression/Binary/NotIn.php</filename>
+<filename>Twig/Node/Expression/Binary/Or.php</filename>
+<filename>Twig/Node/Expression/Binary/Power.php</filename>
+<filename>Twig/Node/Expression/Binary/Range.php</filename>
+<filename>Twig/Node/Expression/Binary/Sub.php</filename>
+<filename>Twig/Node/Expression/BlockReference.php</filename>
+<filename>Twig/Node/Expression/Conditional.php</filename>
+<filename>Twig/Node/Expression/Constant.php</filename>
+<filename>Twig/Node/Expression/ExtensionReference.php</filename>
+<filename>Twig/Node/Expression/Filter.php</filename>
+<filename>Twig/Node/Expression/Function.php</filename>
+<filename>Twig/Node/Expression/GetAttr.php</filename>
+<filename>Twig/Node/Expression/Name.php</filename>
+<filename>Twig/Node/Expression/Parent.php</filename>
+<filename>Twig/Node/Expression/Test.php</filename>
+<filename>Twig/Node/Expression/Unary.php</filename>
+<filename>Twig/Node/Expression/Unary/Neg.php</filename>
+<filename>Twig/Node/Expression/Unary/Not.php</filename>
+<filename>Twig/Node/Expression/Unary/Pos.php</filename>
+<filename>Twig/Node/For.php</filename>
+<filename>Twig/Node/If.php</filename>
+<filename>Twig/Node/Import.php</filename>
+<filename>Twig/Node/Include.php</filename>
+<filename>Twig/Node/Macro.php</filename>
+<filename>Twig/Node/Module.php</filename>
+<filename>Twig/Node/Print.php</filename>
+<filename>Twig/Node/Sandbox.php</filename>
+<filename>Twig/Node/SandboxedModule.php</filename>
+<filename>Twig/Node/SandboxedPrint.php</filename>
+<filename>Twig/Node/Set.php</filename>
+<filename>Twig/Node/Spaceless.php</filename>
+<filename>Twig/Node/Text.php</filename>
+<filename>Twig/NodeInterface.php</filename>
+<filename>Twig/NodeOutputInterface.php</filename>
+<filename>Twig/NodeTraverser.php</filename>
+<filename>Twig/NodeVisitor/Escaper.php</filename>
+<filename>Twig/NodeVisitor/Optimizer.php</filename>
+<filename>Twig/NodeVisitor/SafeAnalysis.php</filename>
+<filename>Twig/NodeVisitor/Sandbox.php</filename>
+<filename>Twig/NodeVisitorInterface.php</filename>
+<filename>Twig/Parser.php</filename>
+<filename>Twig/ParserInterface.php</filename>
+<filename>Twig/Sandbox/SecurityError.php</filename>
+<filename>Twig/Sandbox/SecurityPolicy.php</filename>
+<filename>Twig/Sandbox/SecurityPolicyInterface.php</filename>
+<filename>Twig/Template.php</filename>
+<filename>Twig/TemplateInterface.php</filename>
+<filename>Twig/Test/Function.php</filename>
+<filename>Twig/Test/Method.php</filename>
+<filename>Twig/TestInterface.php</filename>
+<filename>Twig/Token.php</filename>
+<filename>Twig/TokenParser.php</filename>
+<filename>Twig/TokenParser/AutoEscape.php</filename>
+<filename>Twig/TokenParser/Block.php</filename>
+<filename>Twig/TokenParser/Extends.php</filename>
+<filename>Twig/TokenParser/Filter.php</filename>
+<filename>Twig/TokenParser/For.php</filename>
+<filename>Twig/TokenParser/From.php</filename>
+<filename>Twig/TokenParser/If.php</filename>
+<filename>Twig/TokenParser/Import.php</filename>
+<filename>Twig/TokenParser/Include.php</filename>
+<filename>Twig/TokenParser/Macro.php</filename>
+<filename>Twig/TokenParser/Sandbox.php</filename>
+<filename>Twig/TokenParser/Set.php</filename>
+<filename>Twig/TokenParser/Spaceless.php</filename>
+<filename>Twig/TokenParser/Use.php</filename>
+<filename>Twig/TokenParserBroker.php</filename>
+<filename>Twig/TokenParserBrokerInterface.php</filename>
+<filename>Twig/TokenParserInterface.php</filename>
+<filename>Twig/TokenStream.php</filename>
+<filename>img/digits-bottom.png</filename>
+<filename>img/digits-top.png</filename>
+<filename>img/digits.png</filename>
+<filename>img/tablerow.png</filename>
+<filename>index.html</filename>
+<filename>js/flipcounter.js</filename>
+<filename>js/flipcounter.min.js</filename>
+<filename>style/counter.css</filename>
+<filename>style/ticker.css</filename>
+<filename>templates/ticker.twig</filename>
+<filename>templates/tickerTable.twig</filename>
+<filename>templates/ticker_1.twig</filename>
+</files>
+	
+	
+	<params>
+                <param name="tickerOrTable" type="radio" default="0" label="Select an option" description="Select if the ticker or table should be displayed by this module.">
+                  <option value="0">Ticker</option>
+                  <option value="1">Table</option>
+                </param>
+	</params>
+</install>

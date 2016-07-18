@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <params>
+
+    <param type="text" name="from_email" size="100" label="From Address:" description="The from address for the emails." />
+    <param type="text" name="to_email" size="100" label="To Address:" description="The address the contact emails will be sent to." />
+
+  </params>
+</root>

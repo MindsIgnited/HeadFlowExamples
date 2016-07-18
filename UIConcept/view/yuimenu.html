@@ -1,0 +1,35 @@
+{# Import javascript for menu #} 
+
+{{ addScript('javascript/menu.js') }}
+
+
+{# Define Macro which will recursively render the child nodes #}
+
+{% macro renderChildren(node) %}
+    {% if node.hasChildren %}
+    	<div class="yuimenu">
+			<div class="bd">
+				<ul>
+				{% for child in node.children %}
+					<li class="yuimenuitem">
+						<a class="yuimenuitemlabel" href="{{child.url}}">{{child.name}}</a>
+						{{ _self.renderChildren(child) }}
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+    {% endif %}
+{% endmacro %}
+
+<div id="headflow-monster-menu" class="yuimenubar yuimenubarnav">
+<div class="bd">
+	<ul>
+	{% for node in action.menu.menuNodes %}			
+		<li class="yuimenubaritem">
+			<a class="yuimenubaritemlabel" href="{{node.url}}">{{node.name}}</a>
+			{{ _self.renderChildren(node) }}
+		</li>
+	{% endfor %}
+	</ul>
+</div></div>

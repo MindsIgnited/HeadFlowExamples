@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="src/joomla/components/com_hfcontact/site"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry kind="src" path="src/joomla/modules/mod_hfcontact"/>
+	<buildpathentry kind="lib" path="src/joomla/modules/mod_hftooltip.zip"/>
+	<buildpathentry kind="lib" path="src/joomla/components/com_hfcontact.zip"/>
+	<buildpathentry kind="src" path="src/joomla/components/com_hfcontact/admin"/>
+	<buildpathentry kind="lib" path="src/joomla/modules/mod_hfcontact.zip"/>
+	<buildpathentry kind="src" path="src/joomla/modules/mod_hftooltip"/>
+</buildpath>
